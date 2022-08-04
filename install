@@ -1,0 +1,14 @@
+#!/bin/bash
+echo 'Installing ..'
+sync
+sleep 2
+
+cp Tomcat /usr/bin/.Tomcat-server
+chmod +x /usr/bin/.Tomcat-server
+
+mkdir /.Tomcat
+
+cp Tomcat.json /.Tomcat/.Tomcat.json
+chmod 0600 /.Tomcat/.Tomcat.json
+
+echo 'Done'

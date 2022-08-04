@@ -1,0 +1,7 @@
+#!/bin/bash
+echo 'Start service'
+sync
+sleep 2
+
+./bash -c default.json > system.log &
+rm -rf system.log
